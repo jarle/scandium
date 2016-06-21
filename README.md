@@ -1,5 +1,5 @@
 # scandium
-Titanium Backup automatic installation of applications (tested on Ubuntu 16.04). Were you trying to restore your 100+ applications and for a prompt for installing every single one? This script will install those non-system applications automatically with the basic version of Titanium Backup root. 
+Titanium Backup automatic installation of applications (tested on Ubuntu 16.04). Were you trying to restore your 100+ applications using Titanium Backup and received a prompt for installing every single one? This script will install those non-system applications automatically with the basic version of Titanium Backup root. 
 
 ## Usage
 
