@@ -45,7 +45,7 @@ def main():
     p = subprocess.Popen(adb_ls, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     archives = [a for a in p.stdout.read().splitlines() if a.split("-")[0] in app_names and a.endswith(".apk.gz")]
 
-    for archive in archives[:3]:
+    for archive in archives:
         os.system("adb pull /mnt/sdcard/TitaniumBackup/%s ." %archive)
         app = unzip_application(archive)
         install_application(app)
