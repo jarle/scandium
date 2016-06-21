@@ -17,4 +17,5 @@ The script will look for non-system applications in the Titanium Backup folder o
 
 ## Todo
 
-Making the script cross-platform should be easy.
+* Make the script cross-platform
+* Create an android version(?)
