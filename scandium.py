@@ -19,7 +19,7 @@ def unzip_application(archive):
     s = open(save_path, 'wb')
     with gzip.open(archive, 'rb') as g:
         try:
-		    shutil.copyfileobj(g, s)
+        	shutil.copyfileobj(g, s)
         except IOError:
             print IOError
 
