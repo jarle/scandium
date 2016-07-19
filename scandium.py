@@ -37,13 +37,13 @@ def get_property_files():
     p = subprocess.Popen(adb_prop_ls, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     property_files = [f for f in p.stdout.read().splitlines() if f.endswith(".properties")]
     for property_file in property_files:
-    os.system("adb pull %s" %property_file)
+        os.system("adb pull %s" %property_file)
 
 def main():
     try:
-    	os.mkdir(WORKDIR)
+        os.mkdir(WORKDIR)
     except OSError as e:
-    	print e
+        print e
 
     os.chdir(WORKDIR)
     get_property_files()
